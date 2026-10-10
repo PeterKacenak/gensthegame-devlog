@@ -212,3 +212,8 @@ aside { display: flex; flex-direction: column; gap: 1.6rem; }
   border: 4px solid #fff;
 }
 .barcode span { font: 700 .75rem/1.2 var(--font-body); text-transform: uppercase; color: #fff; }
+
+/* plain bullet lists in articles */
+main section ul { padding-left: 1.2rem; margin: 0 0 1.1rem; }
+main section ul li { margin-bottom: .55rem; }
+main section ul li::marker { color: var(--orange); }

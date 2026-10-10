@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="mast"><div class="inner">
-  <a class="logo" href="../index.html">GENŠ<small>THE GAME</small></a>
+  <a class="logo" href="../index.html">GENŠ<small>DEVLOG</small></a>
   <div class="lang-switch" role="group" aria-label="Language"><button data-set="sk">SK</button><button data-set="en">EN</button></div>
 </div></header>
 
@@ -31,44 +31,21 @@
   <section lang="sk">
     <h2>O hre</h2>
     <p>GENŠ je first-person hra z prostredia slovenskej dediny na prelome tisícročí. Cieľom hry je sprostredkovať krutú a niekedy aj absurdnú realitu každodenného života v malej dedinke na Gemeri. Hra je rozdelená na dni.</p>
-  
+  </section>
   <section lang="en">
     <h2>About the game</h2>
     <p>GENŠ is a first-person game set in a Slovak village around the turn of the millennium. Its goal is to convey the harsh, and sometimes absurd, reality of everyday life in a small village in the Gemer region. The game is split into days.</p>
-  
-
-  <section lang="sk">
-    <h2>Časová os</h2>
-    <ul class="timeline">
-      <li><b>Júl</b>: prvý prototyp: pohyb, súboj obuškom a hádzaním, nepriatelia, jednoduché questy, inventár, prvá krčma</li>
-      <li><b>2.–4. okt.</b>: dom, v ktorom hráč býva: dvere, schodisko, garáž, izby, nábytok</li>
-      <li><b>4.–5. okt.</b>: postavy z MPFB2 a spoločné animácie (chôdza, sedenie)</li>
-      <li><b>4. okt.</b>: questy, dialógy a postavy zapisované v dátových súboroch, prvé hlasy</li>
-      <li><b>6. okt.</b>: budova Jednoty s potravinami a krčmou</li>
-      <li><b>6.–10. okt.</b>: dedina Honce: terén, cesty, potok, domy, náves, kostol, bufet</li>
-      <li><b>10. okt.</b>: prvá prechádzka dedinou s poznámkami</li>
-    </ul>
-  </section>
-  <section lang="en">
-    <h2>Timeline</h2>
-    <ul class="timeline">
-      <li><b>July</b>: first prototype: movement, baton and throwing combat, enemies, simple quests, inventory, the first pub</li>
-      <li><b>Oct 2–4</b>: the player's house: doors, stairs, garage, rooms, furniture</li>
-      <li><b>Oct 4–5</b>: MPFB2 characters and shared animations (walking, sitting)</li>
-      <li><b>Oct 4</b>: quests, dialogue and characters stored in data files, first voices</li>
-      <li><b>Oct 6</b>: the Jednota building with the grocery and the pub</li>
-      <li><b>Oct 6–10</b>: the village of Honce: terrain, roads, creek, houses, green, church, snack bar</li>
-      <li><b>Oct 10</b>: the first walk through the village, taking notes</li>
-    </ul>
   </section>
 
   <section lang="sk">
-    <h2>Dom</h2>
-    <p>Prvá vec, ktorú som robil poriadne, bol dom, v ktorom hráč býva: socialistická kocka, akých sú na Slovensku tisíce. Robil som ju po malých krokoch. Najprv obal a strecha, potom vchod, okná, dvere, ktoré sa dajú otvoriť, schodisko, garáž a nakoniec izby a nábytok. Z rovnakého generátora dnes vznikajú aj ostatné domy v dedine.</p>
+    <h2>Ako som začal</h2>
+    <p>V júli som začal úplne obyčajne: pohyb, kamera, obušok, nepriatelia, ktorí na teba idú, a jeden quest. Aby sa bolo čím hádzať, pribudla lopta a s ňou munícia. Prvú postavu som si nechal vygenerovať v Meshy AI, ale animácie sa na nej trhali a po pár dňoch som ju vyhodil. Kameru som z pohľadu tretej osoby prepol na prvú osobu, lebo v dedine chceš vidieť to, čo vidí človek, nie seba zozadu.</p>
+    <p>Potom som pochopil, že bez prostredia je to len testovacia aréna. V októbri som preto začal stavať dom, v ktorom hráč býva: socialistickú kocku, akých sú na Slovensku tisíce. Robil som ju po malých krokoch: obal a strecha, vchod, okná, dvere, ktoré sa dajú otvoriť, schodisko, garáž, izby a nábytok.</p>
   </section>
   <section lang="en">
-    <h2>The house</h2>
-    <p>The first thing I did properly was the player's house: a socialist cube house, the kind there are thousands of in Slovakia. I built it in small steps: shell and roof, then the entrance, windows, doors you can open, the stairs, the garage, and finally the rooms and furniture. The same generator now builds the other houses in the village.</p>
+    <h2>How I started</h2>
+    <p>In July I started with the basics: movement, camera, a baton, enemies that come at you, and one quest. To have something to throw, a ball and ammo came next. I had the first character generated in Meshy AI, but its animations kept snapping and after a few days I threw it out. I switched the camera from third person to first, because in a village you want to see what a person sees, not yourself from behind.</p>
+    <p>Then I realised that without a place it's just a test arena. So in October I started building the player's house: a socialist cube house, the kind there are thousands of in Slovakia. I built it in small steps: shell and roof, the entrance, windows, doors you can open, the stairs, the garage, rooms and furniture.</p>
   </section>
   <div class="pair">
     <figure><img src="../img/2026-10-10/dom-h1.jpg" alt="Dom, prvý krok / House, first step"><figcaption><span lang="sk">Začiatok</span><span lang="en">The start</span></figcaption></figure>
@@ -76,54 +53,79 @@
   </div>
 
   <section lang="sk">
-    <h2>Postavy</h2>
-    <p>Postavy robím v MPFB2 (doplnok do Blendera). Každá má krátky „recept“: vek, postava, oblečenie. Všetky zdieľajú jednu sadu animácií. Zatiaľ ich je len zopár a ešte nepôsobia úplne prirodzene, ale chodia, sedia a dá sa s nimi porozprávať. Najviac času som strávil pri krčmárovi.</p>
+    <h2>Ako to funguje</h2>
+    <p>Skoro nič v hre nie je poskladané ručne v editore. Všetko vyrába skript z dát:</p>
+    <ul>
+      <li><b>Domy</b> vznikajú z generátora. Z jedného „receptu“ (rozmery, strecha, okná, podmurovka) je dom aj s interiérom alebo len kulisa do diaľky.</li>
+      <li><b>Dedina</b> je jeden dátový súbor: kde vedú cesty, kde je potok, ktorá parcela má aký dom a plot. Jeden príkaz z neho postaví terén, cesty s obrubníkmi a priekopami, priepusty, záhrady, kôlne aj stromy. Potom automatický test prejde každú cestu a skontroluje, či sa dá všade prejsť a či sa domy neprekrývajú.</li>
+      <li><b>Postavy</b> robím v MPFB2 (doplnok do Blendera). Každá má krátky recept: vek, postava, oblečenie. Všetky zdieľajú jednu sadu animácií, takže vedia chodiť, sedieť na lavici aj na gauči.</li>
+      <li><b>Questy a dialógy</b> sú tiež v dátových súboroch, nie v kóde. Hlasy postáv sa k nim generujú zvlášť.</li>
+    </ul>
+    <p>Väčšinu kódu nepíšem ručne. Úlohy plánujem a rozpisujem s Claudom, kód potom väčšinou napíše Gemini a ja výsledok kontrolujem priamo v hre. Na to mám v hre nástroj: počas prechádzky stlačím F12, napíšem poznámku a uloží sa k nej screenshot aj presná poloha kamery. Z prvej prechádzky mám 22 poznámok, ktoré teraz postupne opravujem.</p>
   </section>
   <section lang="en">
-    <h2>Characters</h2>
-    <p>I make the characters in MPFB2 (a Blender add-on). Each one has a short "recipe": age, build, clothes. They all share one set of animations. There are only a few so far and they don't look fully natural yet, but they walk, sit and you can talk to them. The pub keeper took the most time.</p>
+    <h2>How it works</h2>
+    <p>Almost nothing in the game is placed by hand in the editor. Scripts build everything from data:</p>
+    <ul>
+      <li><b>Houses</b> come from a generator. One "recipe" (size, roof, windows, plinth) gives a house with an interior, or just a backdrop for the distance.</li>
+      <li><b>The village</b> is one data file: where the roads go, where the creek is, which plot has which house and fence. One command builds the terrain, roads with kerbs and ditches, culverts, gardens, sheds and trees. Then an automatic test walks every road and checks you can get through everywhere and that no houses overlap.</li>
+      <li><b>Characters</b> are made in MPFB2 (a Blender add-on). Each one has a short recipe: age, build, clothes. They all share one set of animations, so they can walk and sit on a bench or a sofa.</li>
+      <li><b>Quests and dialogue</b> live in data files too, not in code. Voices are generated for them separately.</li>
+    </ul>
+    <p>I don't write most of the code by hand. I plan and break down the tasks with Claude, Gemini usually writes the code, and I check the result directly in the game. For that I have an in-game tool: during a walk I press F12, type a note, and it saves a screenshot with the exact camera position. The first walk gave me 22 notes, which I'm now fixing one by one.</p>
   </section>
-  <figure><img src="../img/2026-10-10/postavy.jpg" alt="Postavy / Characters"><figcaption><span lang="sk">Prvé postavy</span><span lang="en">The first characters</span></figcaption></figure>
+  <figure><img src="../img/2026-10-10/postavy.jpg" alt="Postavy / Characters"><figcaption><span lang="sk">Prvé postavy z MPFB2</span><span lang="en">The first MPFB2 characters</span></figcaption></figure>
   <div class="pair">
-    <figure><img src="../img/2026-10-10/krcmar.jpg" alt="Krčmár / Pub keeper"><figcaption><span lang="sk">Krčmár</span><span lang="en">The pub keeper</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/krcmar.jpg" alt="Krčmár / Pub keeper"><figcaption><span lang="sk">Krčmár, pri ňom som strávil najviac času</span><span lang="en">The pub keeper, who took the most time</span></figcaption></figure>
     <figure><img src="../img/2026-10-10/krcma-interier.jpg" alt="Krčma / The pub"><figcaption><span lang="sk">V krčme</span><span lang="en">In the pub</span></figcaption></figure>
   </div>
-
-  <section lang="sk">
-    <h2>Krčma</h2>
-    <p>Krčma je v budove Jednoty spolu s potravinami a pred ňou je terasa. Questy a dialógy sa nezapisujú do kódu, ale do dátových súborov, takže pridať nový rozhovor je skôr písanie ako programovanie.</p>
-  </section>
-  <section lang="en">
-    <h2>The pub</h2>
-    <p>The pub shares the Jednota building with the grocery, with a terrace in front. Quests and dialogue aren't written in code but in data files, so adding a new conversation is more writing than programming.</p>
-  </section>
   <div class="pair">
-    <figure><img src="../img/2026-10-10/jednota.jpg" alt="Jednota"><figcaption><span lang="sk">Prvá verzia budovy</span><span lang="en">The first version</span></figcaption></figure>
-    <figure><img src="../img/2026-10-10/terasa.jpg" alt="Terasa / Terrace"><figcaption><span lang="sk">Dnes v dedine</span><span lang="en">Today, in the village</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/dedina-w1.jpg" alt="Prvá verzia dediny / First village version"><figcaption><span lang="sk">Dedina 6. októbra: biele kvádre pri sivej ceste</span><span lang="en">The village on October 6: white boxes by a grey road</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/naves.jpg" alt="Náves / Village green"><figcaption><span lang="sk">O pár dní neskôr: náves s kostolom a úradom</span><span lang="en">A few days later: the green, church and town hall</span></figcaption></figure>
   </div>
 
   <section lang="sk">
-    <h2>Dedina</h2>
-    <p>Dedina vychádza zo skutočných Honiec pri Rožňave. Je zmenšená a veľa vecí je zatiaľ len približne. Cesty, potok, domy, ploty, záhrady aj stromy rozmiestňuje skript podľa jedného dátového súboru, takže sa dá celá prestavať naraz. Na začiatku to boli biele kvádre pri sivej ceste. Ešte veľa chýba: cesty na seba poriadne nenadväzujú, niektoré domy nemajú textúry a dvory sú prázdne.</p>
+    <h2>Čo som sa naučil</h2>
+    <ul>
+      <li><b>Malé kroky.</b> Dom vznikol v dvanástich krokoch a každý som si pozrel. Keď som chcel naraz priveľa, vždy sa niečo rozbilo.</li>
+      <li><b>Najprv jeden, potom všetky.</b> Raz som nechal pridať schránky, čísla domov a lavičky na všetkých 58 parciel naraz. Polovica schránok visela vo vzduchu a celé som to vrátil. Teraz dotiahnem jeden dom a dvor, schválim ho a až potom to rozšírim na ďalšie.</li>
+      <li><b>Dáta namiesto kódu.</b> Keď je dedina v jednom súbore, posunúť bufet o štyri metre je zmena dvoch čísel, nie hodina klikania.</li>
+      <li><b>Neverím „hotovo“, verím screenshotu.</b> Testy môžu prejsť a v hre aj tak môže byť prechod pre chodcov otočený naopak. Preto každú zmenu overujem obrázkom z rovnakého miesta.</li>
+      <li><b>AI je rýchla, ale treba ju krátko držať.</b> Keď dostane veľkú voľnú úlohu, vie hodinu pracovať a minúť desiatky miliónov tokenov bez viditeľného výsledku. Krátka, presne opísaná úloha funguje oveľa lepšie.</li>
+    </ul>
   </section>
   <section lang="en">
-    <h2>The village</h2>
-    <p>The village is based on the real Honce near Rožňava. It's smaller and many things are only approximate so far. Roads, the creek, houses, fences, gardens and trees are placed by a script from one data file, so the whole village can be rebuilt at once. It started as white boxes next to a grey road. A lot is still missing: roads don't join up properly, some houses have no textures, and the yards are empty.</p>
+    <h2>What I've learned</h2>
+    <ul>
+      <li><b>Small steps.</b> The house took twelve steps and I looked at every one. Whenever I wanted too much at once, something broke.</li>
+      <li><b>One first, then all.</b> Once I had mailboxes, house numbers and benches added to all 58 plots at once. Half the mailboxes floated in the air and I reverted the lot. Now I finish one house and yard, approve it, and only then roll it out.</li>
+      <li><b>Data instead of code.</b> With the village in one file, moving the snack bar four metres is a change of two numbers, not an hour of clicking.</li>
+      <li><b>I don't trust "done", I trust a screenshot.</b> Tests can pass and the zebra crossing can still be backwards. So every change gets checked with a picture from the same spot.</li>
+      <li><b>AI is fast but needs a short leash.</b> Given a big open task it can work for an hour and burn tens of millions of tokens with nothing visible to show. A short, precisely described task works much better.</li>
+    </ul>
   </section>
-  <div class="pair">
-    <figure><img src="../img/2026-10-10/dedina-w1.jpg" alt="Prvá verzia dediny / First village version"><figcaption><span lang="sk">6. október</span><span lang="en">October 6</span></figcaption></figure>
-    <figure><img src="../img/2026-10-10/naves.jpg" alt="Náves / Village green"><figcaption><span lang="sk">Náves s kostolom a úradom</span><span lang="en">The green, church and town hall</span></figcaption></figure>
-  </div>
+
+  <section lang="sk">
+    <h2>Čo ma serie</h2>
+    <ul>
+      <li><b>Cesty.</b> Každý kus cesty, chodníka a vjazdu je zatiaľ samostatná plocha, takže križovatky vyzerajú ako trojuholníky a štvorce naukladané na sebe. Toto je najbližšia veľká oprava.</li>
+      <li><b>Drobnosti, ktoré skript nevidí.</b> Prechod pre chodcov otočený naopak, nápis väčší ako tabuľa, ľudia, ktorí sedia napoly v stene susedného domu. Test povie, že je všetko v poriadku.</li>
+      <li><b>Animácie.</b> Prenášať animácie z jednej kostry na inú je utrpenie, preto majú všetky postavy rovnakú kostru a zdieľajú jednu knižnicu.</li>
+      <li><b>Prísny Godot.</b> Projekt mám nastavený tak, že aj varovanie je chyba. Je to správne, ale jedna zabudnutá premenná bez typu vie zastaviť všetko.</li>
+      <li><b>Limity.</b> AI nástroje majú kvóty a niekedy je deň, keď sa toho jednoducho viac nestihne.</li>
+    </ul>
+  </section>
+  <section lang="en">
+    <h2>What drives me nuts</h2>
+    <ul>
+      <li><b>Roads.</b> Every piece of road, sidewalk and driveway is still a separate surface, so junctions look like triangles and squares stacked on each other. That's the next big fix.</li>
+      <li><b>Small things a script can't see.</b> A zebra crossing turned the wrong way, a sign bigger than its board, people sitting halfway inside the wall of the house next door. The tests say everything is fine.</li>
+      <li><b>Animations.</b> Moving animations from one skeleton to another is torture, so all characters share one skeleton and one animation library.</li>
+      <li><b>Strict Godot.</b> My project treats warnings as errors. It's the right call, but one forgotten untyped variable can stop everything.</li>
+      <li><b>Limits.</b> AI tools have quotas, and some days you just can't get more done.</li>
+    </ul>
+  </section>
   <figure><img src="../img/2026-10-10/bufet-dnes.jpg" alt="Bufet / Snack bar"><figcaption><span lang="sk">Bufet a starý dom vedľa neho, podľa fotky zo Street View</span><span lang="en">The snack bar and the old house next door, based on a Street View photo</span></figcaption></figure>
-
-  <section lang="sk">
-    <h2>Ako pracujem</h2>
-    <p>Väčšinu kódu nepíšem ručne. Úlohy plánujem a rozpisujem s Claudom, kód potom väčšinou napíše Gemini a ja výsledok kontrolujem priamo v hre. Na kontrolu mám v hre jednoduchý nástroj: počas prechádzky stlačím F12, napíšem poznámku a uloží sa k nej screenshot aj poloha kamery. Z prvej prechádzky mám 22 poznámok, napríklad prechod pre chodcov otočený naopak alebo nápisy, ktoré sa nezmestili na tabuľu. Teraz ich postupne opravujem.</p>
-  </section>
-  <section lang="en">
-    <h2>How I work</h2>
-    <p>I don't write most of the code by hand. I plan and break down the tasks with Claude, Gemini usually writes the code, and I check the result directly in the game. For that the game has a simple tool: during a walk I press F12, type a note, and it saves a screenshot with the camera position. The first walk gave me 22 notes, like a zebra crossing turned the wrong way or signs that didn't fit their boards. I'm fixing them one by one.</p>
-  </section>
 
   <section lang="sk">
     <h2>Čo ďalej</h2>
