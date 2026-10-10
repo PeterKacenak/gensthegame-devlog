@@ -217,3 +217,27 @@ aside { display: flex; flex-direction: column; gap: 1.6rem; }
 main section ul { padding-left: 1.2rem; margin: 0 0 1.1rem; }
 main section ul li { margin-bottom: .55rem; }
 main section ul li::marker { color: var(--orange); }
+
+/* ---------- click-to-enlarge screenshots ---------- */
+img.zoomable { cursor: zoom-in; transition: transform .15s; }
+img.zoomable:hover { transform: scale(1.015); }
+html.lb-lock { overflow: hidden; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center;
+  background: rgba(0, 0, 0, .92); padding: 3rem 4rem; cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox figure { margin: 0; transform: none !important; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; }
+.lightbox img { max-width: 100%; max-height: calc(100vh - 8rem); width: auto; border: 5px solid #fff; box-shadow: 10px 10px 0 var(--orange); }
+.lightbox figcaption { margin-top: .9rem; }
+.lightbox button {
+  position: absolute; border: 3px solid #000; background: var(--yellow); color: #000; cursor: pointer;
+  font: 400 2rem/1 var(--font-head); width: 3rem; height: 3rem; box-shadow: 4px 4px 0 #000;
+}
+.lightbox .lb-prev { left: 1rem; top: 50%; transform: translateY(-50%) rotate(-3deg); }
+.lightbox .lb-next { right: 1rem; top: 50%; transform: translateY(-50%) rotate(3deg); }
+.lightbox .lb-close { top: 1rem; right: 1rem; background: var(--red); color: #fff; }
+@media (max-width: 640px) {
+  .lightbox { padding: 3.5rem .5rem; }
+  .lightbox .lb-prev, .lightbox .lb-next { top: auto; bottom: 1rem; transform: none; }
+}
