@@ -17,7 +17,7 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; background: var(--ink); }
 body {
   margin: 0; color: var(--text); font: 17px/1.6 var(--font-body);
   background:
@@ -25,7 +25,7 @@ body {
     radial-gradient(circle at 110% 30%, rgba(0, 229, 255, .18), transparent 40%),
     radial-gradient(rgba(255,255,255,.05) 1px, transparent 1.5px) 0 0 / 5px 5px,
     var(--ink);
-  overflow-x: hidden;
+  overflow-x: hidden; min-height: 100vh;
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--yellow); }
