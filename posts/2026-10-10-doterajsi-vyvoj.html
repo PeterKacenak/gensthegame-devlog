@@ -5,19 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Od kocky k dedine – GENS devlog</title>
 <meta name="description" content="Doterajší vývoj: prototyp, dom, postavy, krčma a dedina Honce.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <script src="../assets/lang.js"></script>
 </head>
 <body>
+<div class="page">
 <header class="site-header"><div class="inner">
-  <a class="brand" href="../index.html">GENS<span>.</span> devlog</a>
+  <a class="brand" href="../index.html">GENS<span>.</span><small>devlog</small><span class="beta">BETA</span></a>
   <div class="lang-switch" role="group" aria-label="Language"><button data-set="sk">SK</button><button data-set="en">EN</button></div>
-</div></header>
+</div>
+<nav class="tabs"><a href="../index.html" class=""><span lang="sk">Domov</span><span lang="en">Home</span></a><a href="../posts/2026-10-10-doterajsi-vyvoj.html" class="on"><span lang="sk">Zápisy</span><span lang="en">Entries</span></a></nav>
+</header>
+<div class="marquee" aria-hidden="true"><span lang="sk">Vitajte na stránke hry GENS! Stránka je stále v rekonštrukcii Nový zápis: Od kocky k dedine Pozdravujeme všetkých štamgastov</span><span lang="en">Welcome to the GENS home page! This site is under construction New entry: From a cube house to a village Greetings to all the regulars</span></div>
 
+<div class="layout">
 <main>
+<div class="window">
+<div class="titlebar"><span>Od_kocky_k_dedine.txt - GENS</span><span class="ctl"><i>_</i><i>&#9633;</i><i>&times;</i></span></div>
+<div class="menubar"><span><u>S</u>úbor</span><span><u>Ú</u>pravy</span><span><u>Z</u>obraziť</span><span><u>P</u>omocník</span></div>
+<div class="content sunken">
   <p class="meta"><span lang="sk">10. október 2026 · #1</span><span lang="en">October 10, 2026 · #1</span></p>
   <h1><span lang="sk">Od kocky k dedine</span><span lang="en">From a cube house to a village</span></h1>
   <p class="lead" lang="sk">Prvý zápis devlogu: čo sa doteraz postavilo, od prvého súbojového prototypu až po dedinu Honce, ktorou sa dá prejsť.</p>
@@ -123,6 +129,7 @@
     <p>The game has a note tool: during a walk I press F12, type a comment, and it saves a screenshot with the exact camera position. The first walk produced 22 notes: a zebra crossing turned the wrong way, signs too big for their boards, roads that don't blend into each other. They became a plan of small steps, and each step is checked with a screenshot from the same spot. AI agents help with the work: Claude plans and reviews, Gemini writes most of the code.</p>
   </section>
 
+  <hr class="rainbow">
   <section lang="sk">
     <h2>Čo ďalej</h2>
     <p>Najbližšie: plynulé cesty, chodníky a vjazdy, cesty na oboch koncoch dediny, ktoré sa strácajú v lese, hasičská zbrojnica, druhá krčma a domy s lávkami cez potok. Potom príde na rad jeden dvor dotiahnutý do detailu ako vzor pre ostatné. Až keď bude dedina hotová, prídu fyzika a hrateľnosť po dňoch.</p>
@@ -131,8 +138,24 @@
     <h2>What's next</h2>
     <p>Next up: seamless roads, sidewalks and driveways, roads at both ends of the village that fade into the forest, a fire station, a second pub and houses reached by footbridges over the creek. Then one yard finished in full detail as the template for the rest. Once the village is done, physics and day-by-day gameplay come next.</p>
   </section>
+  <div class="construction"><span lang="sk">&#9888; STRÁNKA V REKONŠTRUKCII &#9888;</span><span lang="en">&#9888; UNDER CONSTRUCTION &#9888;</span></div>
+</div>
+</div>
 </main>
+<aside>
+  <div class="widget"><h4><span lang="sk">O hre</span><span lang="en">About</span></h4>
+    <p lang="sk">GENS je hra z pohľadu prvej osoby zo slovenskej dediny Honce: dni, questy, súboje a krčma.</p>
+    <p lang="en">GENS is a first-person game set in the Slovak village of Honce: days, quests, fights and the pub.</p></div>
+  <div class="widget"><h4><span lang="sk">Archív</span><span lang="en">Archive</span></h4>
+    <ul><li><a href="../posts/2026-10-10-doterajsi-vyvoj.html"><span lang="sk">Október 2026</span><span lang="en">October 2026</span></a> (1)</li></ul></div>
+  <div class="widget"><h4><span lang="sk">Odber</span><span lang="en">Subscribe</span></h4>
+    <a class="rss" href="#"><span lang="sk">RSS čoskoro</span><span lang="en">RSS coming soon</span></a></div>
+  <div class="widget"><h4><span lang="sk">Odkazy</span><span lang="en">Links</span></h4>
+    <div class="buttons80"><span class="b80 g">GODOT ENGINE</span><span class="b80 s">MADE IN SK</span><span class="b80 v">VALID XHTML?</span><span class="b80 w">BEST AT 1024x768</span></div></div>
+</aside>
+</div>
 
-<footer class="site-footer"><div class="inner"><a href="../index.html"><span lang="sk">← Všetky zápisy</span><span lang="en">← All entries</span></a></div></footer>
+<footer class="site-footer"><p><a href="../index.html"><span lang="sk">&lt;&lt; Späť na všetky zápisy</span><span lang="en">&lt;&lt; Back to all entries</span></a></p><div class="badges"><span class="badge">Best viewed 800&times;600</span><span class="badge b2">Made with Godot</span><span class="badge b3">Slovak village inside</span><span class="badge b4">HTML 4.0 compatible*</span></div></footer>
+</div>
 </body>
 </html>
