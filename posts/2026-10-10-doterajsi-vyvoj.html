@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="sk" data-lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Od kocky k dedine – GENS devlog</title>
+<meta name="description" content="Doterajší vývoj: prototyp, dom, postavy, krčma a dedina Honce.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/lang.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="inner">
+  <a class="brand" href="../index.html">GENS<span>.</span> devlog</a>
+  <div class="lang-switch" role="group" aria-label="Language"><button data-set="sk">SK</button><button data-set="en">EN</button></div>
+</div></header>
+
+<main>
+  <p class="meta"><span lang="sk">10. október 2026 · #1</span><span lang="en">October 10, 2026 · #1</span></p>
+  <h1><span lang="sk">Od kocky k dedine</span><span lang="en">From a cube house to a village</span></h1>
+  <p class="lead" lang="sk">Prvý zápis devlogu: čo sa doteraz postavilo, od prvého súbojového prototypu až po dedinu Honce, ktorou sa dá prejsť.</p>
+  <p class="lead" lang="en">The first devlog entry: what has been built so far, from the first combat prototype to the village of Honce you can walk through.</p>
+
+  <figure class="hero"><img src="../img/2026-10-10/honce-overview.jpg" alt="Pohľad na dedinu Honce z kopca / Honce seen from the hill">
+    <figcaption><span lang="sk">Honce z kopca: stlačená verzia skutočnej dediny v okrese Rožňava.</span><span lang="en">Honce from the hill: a compressed version of the real village in the Rožňava district.</span></figcaption></figure>
+
+  <section lang="sk">
+    <h2>O čom je hra</h2>
+    <p>GENS je hra z pohľadu prvej osoby zasadená do slovenskej dediny. Hra je rozdelená na <b>dni</b>: ráno vyjdeš z domu, cez deň plníš úlohy, rozprávaš sa s ľuďmi z dediny, občas sa pobiješ a večer sa všetko stretne v krčme. Súboje a questy sú rovnako dôležité. Cieľ je dostať hru do bodu, keď sa nový deň dá pridať len ako obsah: úlohy, dialógy a hlasy, bez nového kódu.</p>
+  </section>
+  <section lang="en">
+    <h2>What the game is about</h2>
+    <p>GENS is a first-person game set in a Slovak village. The game is split into <b>days</b>: you leave the house in the morning, do quests during the day, talk to the villagers, get into the occasional fight, and in the evening everything meets in the pub. Combat and quests matter equally. The goal is to reach the point where a new day is pure content (quests, dialogue, voices) with no new code.</p>
+  </section>
+
+  <section lang="sk">
+    <h2>Časová os</h2>
+    <ul class="timeline">
+      <li><b>júl</b>: prototyp: pohyb, súboj obuškom a hádzaním, nepriatelia, questy, inventár, NPC s titulkami, prvá krčma</li>
+      <li><b>2.–4. okt.</b>: rodinný dom „kocka“ krok za krokom: dvere, schodisko, garáž, izby, nábytok</li>
+      <li><b>4.–5. okt.</b>: postavy z MPFB2 so spoločnými animáciami (chôdza, sedenie), krčmár metalista</li>
+      <li><b>4. okt.</b>: questy, dialógy a NPC riadené dátami (JSON) a hlasy postáv</li>
+      <li><b>6. okt.</b>: budova Jednoty: potraviny a krčma Pivnica s terasou</li>
+      <li><b>6.–10. okt.</b>: dedina Honce: terén, cesty, potok, ~100 parciel, náves, kostol, úrad, bufet, stromy</li>
+      <li><b>10. okt.</b>: prvá „recenzná“ prechádzka dedinou s nástrojom na poznámky (F12)</li>
+    </ul>
+  </section>
+  <section lang="en">
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li><b>July</b>: prototype: movement, baton and throwing combat, enemies, quests, inventory, NPC subtitles, the first pub</li>
+      <li><b>Oct 2–4</b>: a socialist "cube" family house, step by step: doors, stairs, garage, rooms, furniture</li>
+      <li><b>Oct 4–5</b>: MPFB2 characters with shared animations (walking, sitting), a metalhead pub keeper</li>
+      <li><b>Oct 4</b>: data-driven quests, dialogue and NPCs (JSON) and character voices</li>
+      <li><b>Oct 6</b>: the "Jednota" building: grocery and the Pivnica pub with a terrace</li>
+      <li><b>Oct 6–10</b>: the village of Honce: terrain, roads, creek, ~100 plots, village green, church, town hall, snack bar, trees</li>
+      <li><b>Oct 10</b>: the first review walk through the village with an in-game note tool (F12)</li>
+    </ul>
+  </section>
+
+  <section lang="sk">
+    <h2>Dom, v ktorom to začína</h2>
+    <p>Hráč býva v typickej socialistickej „kocke“. Dom vznikal v dvanástich malých krokoch: najprv obal a strecha, potom vchod, okná so sklenenými tehlami, dvere, ktoré sa naozaj otvárajú, schodisko do tvaru U, garáž s posuvnou bránou a nakoniec izby a nábytok. Z rovnakého generátora dnes vznikajú aj ďalšie domy v dedine.</p>
+  </section>
+  <section lang="en">
+    <h2>The house where it starts</h2>
+    <p>The player lives in a typical socialist "cube" house. It was built in twelve small steps: shell and roof first, then the entrance, windows with glass blocks, doors that really open, a U-shaped staircase, a garage with a sliding gate, and finally the rooms and furniture. The same generator now builds the other houses in the village.</p>
+  </section>
+  <div class="pair">
+    <figure><img src="../img/2026-10-10/dom-h1.jpg" alt="Dom, prvý krok / House, step 1"><figcaption><span lang="sk">Krok 1</span><span lang="en">Step 1</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/dom-h12.jpg" alt="Dom, krok 12 / House, step 12"><figcaption><span lang="sk">Krok 12</span><span lang="en">Step 12</span></figcaption></figure>
+  </div>
+
+  <section lang="sk">
+    <h2>Ľudia z dediny</h2>
+    <p>Postavy sú generované v MPFB2 (Blender) z „receptov“, takže pridať nového dedinčana znamená napísať pár riadkov: vek, postavu, oblečenie. Všetci zdieľajú jednu knižnicu animácií. Vedia chodiť, sedieť na lavici aj na gauči a rozprávať sa. Najviac práce si vyžiadal krčmár: metalista s plnou bradou, okuliarmi a koženou zásterou.</p>
+  </section>
+  <section lang="en">
+    <h2>The villagers</h2>
+    <p>Characters are generated in MPFB2 (Blender) from "recipes", so adding a villager means a few lines: age, build, clothes. All of them share one animation library. They can walk, sit on a bench or a sofa, and talk. The most work went into the pub keeper: a metalhead with a full beard, glasses and a leather apron.</p>
+  </section>
+  <figure><img src="../img/2026-10-10/postavy.jpg" alt="Postavy z dediny / Villagers"><figcaption><span lang="sk">Prvá várka dedinčanov.</span><span lang="en">The first batch of villagers.</span></figcaption></figure>
+  <div class="pair">
+    <figure><img src="../img/2026-10-10/krcmar.jpg" alt="Krčmár / Pub keeper"><figcaption><span lang="sk">Krčmár za pultom.</span><span lang="en">The pub keeper behind the bar.</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/krcma-interier.jpg" alt="Krčma / The pub"><figcaption><span lang="sk">Krčma: štamgasti, dedinčania, krčmár.</span><span lang="en">The pub: regulars, villagers, the keeper.</span></figcaption></figure>
+  </div>
+
+  <section lang="sk">
+    <h2>Krčma a Jednota</h2>
+    <p>Krčma je srdce dediny. Sedí v budove Jednoty spolu s potravinami. Pred ňou je terasa so stolmi na pivo, slnečníkom a markízou. Questy, dialógy a správanie postáv sa zapisujú do dátových súborov, nie do kódu, a hlasy sa k nim generujú zvlášť.</p>
+  </section>
+  <section lang="en">
+    <h2>The pub and the Jednota</h2>
+    <p>The pub is the heart of the village. It shares the Jednota building with the grocery, and in front there is a terrace with beer tables, an umbrella and an awning. Quests, dialogue and NPC behaviour live in data files, not code, and voices are generated for them separately.</p>
+  </section>
+  <div class="pair">
+    <figure><img src="../img/2026-10-10/jednota.jpg" alt="Jednota"><figcaption><span lang="sk">Prvá verzia budovy.</span><span lang="en">The first version of the building.</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/terasa.jpg" alt="Terasa krčmy / Pub terrace"><figcaption><span lang="sk">Dnes, v dedine.</span><span lang="en">Today, in the village.</span></figcaption></figure>
+  </div>
+
+  <section lang="sk">
+    <h2>Dedina Honce</h2>
+    <p>Dedina je inšpirovaná skutočnými Honcami. Pôdorys je stlačený, ale charakter ostáva: hlavná cesta pozdĺž potoka, trojuholníková náves s kostolom a obecným úradom, staré dlhé domy na kamennej podmurovke, bytovky, bufet pri ceste. Všetko je generované z jedného dátového súboru a skriptu: terén, cesty s obrubníkmi a priekopami, priepusty, ploty, záhrady, kôlne, ovocné stromy aj elektrické stĺpy. Na začiatku to boli biele kvádre pri sivej ceste.</p>
+  </section>
+  <section lang="en">
+    <h2>The village of Honce</h2>
+    <p>The village is inspired by the real Honce. The layout is compressed, but the character stays: the main road along the creek, a triangular village green with the church and town hall, old long houses on stone plinths, blocks of flats, a snack bar by the road. Everything is generated from one data file and one script: terrain, roads with kerbs and ditches, culverts, fences, gardens, sheds, fruit trees, even power poles. It started as white boxes next to a grey road.</p>
+  </section>
+  <div class="pair">
+    <figure><img src="../img/2026-10-10/dedina-w1.jpg" alt="Prvá verzia dediny / First village version"><figcaption><span lang="sk">6. október: prvý pôdorys.</span><span lang="en">October 6: the first layout.</span></figcaption></figure>
+    <figure><img src="../img/2026-10-10/naves.jpg" alt="Náves / Village green"><figcaption><span lang="sk">Náves s kostolom a úradom.</span><span lang="en">The green with the church and town hall.</span></figcaption></figure>
+  </div>
+  <figure><img src="../img/2026-10-10/bufet-dnes.jpg" alt="Bufet a starý dom / Snack bar and old house"><figcaption><span lang="sk">Bufet a starý dom vedľa neho, podľa fotky zo Street View.</span><span lang="en">The snack bar and the old house next to it, after a Street View photo.</span></figcaption></figure>
+
+  <section lang="sk">
+    <h2>Ako to robím</h2>
+    <p>V hre je nástroj na poznámky: pri prechádzke stlačím F12, napíšem komentár a uloží sa screenshot aj presná poloha kamery. Z prvej prechádzky vzniklo 22 poznámok: zle otočený prechod pre chodcov, nápisy, ktoré sa nezmestia na tabuľu, cesty, ktoré do seba neprechádzajú. Z nich vznikol plán malých krokov. Každý krok sa overí screenshotom z rovnakého miesta. Pri práci mi pomáhajú AI agenti: Claude plánuje a kontroluje, Gemini píše väčšinu kódu.</p>
+  </section>
+  <section lang="en">
+    <h2>How I work</h2>
+    <p>The game has a note tool: during a walk I press F12, type a comment, and it saves a screenshot with the exact camera position. The first walk produced 22 notes: a zebra crossing turned the wrong way, signs too big for their boards, roads that don't blend into each other. They became a plan of small steps, and each step is checked with a screenshot from the same spot. AI agents help with the work: Claude plans and reviews, Gemini writes most of the code.</p>
+  </section>
+
+  <section lang="sk">
+    <h2>Čo ďalej</h2>
+    <p>Najbližšie: plynulé cesty, chodníky a vjazdy, cesty na oboch koncoch dediny, ktoré sa strácajú v lese, hasičská zbrojnica, druhá krčma a domy s lávkami cez potok. Potom príde na rad jeden dvor dotiahnutý do detailu ako vzor pre ostatné. Až keď bude dedina hotová, prídu fyzika a hrateľnosť po dňoch.</p>
+  </section>
+  <section lang="en">
+    <h2>What's next</h2>
+    <p>Next up: seamless roads, sidewalks and driveways, roads at both ends of the village that fade into the forest, a fire station, a second pub and houses reached by footbridges over the creek. Then one yard finished in full detail as the template for the rest. Once the village is done, physics and day-by-day gameplay come next.</p>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="inner"><a href="../index.html"><span lang="sk">← Všetky zápisy</span><span lang="en">← All entries</span></a></div></footer>
+</body>
+</html>
