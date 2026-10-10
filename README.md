@@ -1,4 +1,4 @@
-# GENS devlog
+# GENŠ devlog
 
 Static site for GitHub Pages (no build step). Open `index.html` in a browser to preview.
 

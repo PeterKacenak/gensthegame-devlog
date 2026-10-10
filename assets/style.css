@@ -43,7 +43,7 @@ html[data-lang="sk"] [lang="en"]:not(html), html[data-lang="en"] [lang="sk"]:not
   display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
 }
 .logo {
-  font: 400 clamp(2.6rem, 7vw, 4.2rem)/.9 var(--font-head); text-decoration: none; letter-spacing: .02em;
+  font: 400 clamp(2.6rem, 7vw, 4.2rem)/1.15 var(--font-head); text-decoration: none; letter-spacing: .02em; padding-top: .12em;
   transform: skew(-8deg); display: inline-block;
   background: linear-gradient(180deg, #fff 0, #fff 45%, #9aa0a8 50%, #e9edf2 75%, #7c828a 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
