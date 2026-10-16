@@ -263,3 +263,6 @@ html.lb-lock { overflow: hidden; }
 
 /* dialect quote in a post */
 blockquote { margin: 1.2rem 0; padding: .8rem 1rem; border-left: 6px solid var(--yellow); background: rgba(255,230,0,.06); font-style: italic; }
+
+/* post byline next to the date */
+.byline { margin-left: .8rem; font-weight: 600; opacity: .75; }
